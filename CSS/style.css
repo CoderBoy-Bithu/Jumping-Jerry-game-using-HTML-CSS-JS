@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+
+.GameContaner{
+    background-image: url(../IMG/B1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.Jerry{
+    background-image: url(../IMG/Jerry.png);
+    background-repeat: no-repeat;
+    width:225px;
+    height: 240px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 48px;
+}
+
+.Tom{
+    background-image: url(../IMG/Tom.png);
+    background-size: cover;
+    width: 148px;
+    height: 148px;
+    position: absolute;
+    bottom: 0px;
+    left: 46vw;
+
+}
+
+.gameover{
+    position: relative;
+    top: 50px;
+    font-size: 53px;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: center;
+    visibility: hidden;
+    display: block;
+    text-decoration: underline;
+    color: #ffa500;
+}
+
+#score{
+    font-size: 40px;
+    position: relative;
+    left: 50px;
+    float: left;
+    padding: 13px;
+    border: 10px double black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    font-size: 50px;
+    display: block;
+    font-family: fantasy;
+    
+}
+.animation{
+    animation: jerry 0.6s linear;  
+}
+
+.animation2{
+    animation: tom 5s linear infinite;  
+}
+@keyframes jerry{
+    0%{
+       bottom: 0px;
+    }
+    50%{
+       bottom: 390px;
+    }
+    100%{
+       bottom: 0px;
+    }
+}
+
+@keyframes tom{
+    0%{
+        left:100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
